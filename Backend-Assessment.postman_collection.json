@@ -1,0 +1,665 @@
+{
+  "info": {
+    "_postman_id": "abf14af9-f1a6-415c-9a2b-91e045709c40",
+    "name": "BankEnd Assesment",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "39137417"
+  },
+  "item": [
+    {
+      "name": "Register User",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZTM5MzhhMjM0OTU4OTExYWY3MjgxOSIsImVtYWlsIjoiajExQGVkM2h1Yi5jb20iLCJyb2xlIjoidXNlciIsImlhdCI6MTc0Mjk2NzY5MSwiZXhwIjoxNzQzNTcyNDkxfQ.tyNb79J4aB9tCzU5zMALyWjda9k7Ok2HA8-tNJUpUP4",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Shittu Emma\",\r\n    \"email\": \"shem4soul@gmail.com\",\r\n    \"password\": \"church\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/users/register",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "users",
+            "register"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Register User",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Shittu Emma\",\r\n    \"email\": \"shem4soul@gmail.com\",\r\n    \"password\": \"church\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/users/register",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "users",
+                "register"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "267"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"10b-NBtjNQD8UoD1nHXr374d7meYdz0\""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 29 Jan 2026 13:23:44 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"_id\": \"697b5f60da0d40120fe88ab4\",\n    \"name\": \"Shittu Emma\",\n    \"email\": \"shem4soul@gmail.com\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5N2I1ZjYwZGEwZDQwMTIwZmU4OGFiNCIsImlhdCI6MTc2OTY5MzAyNCwiZXhwIjoxNzcyMjg1MDI0fQ.wGrqT4jeA8v2P-AoAt_E8vWPCgckL42ZiAIkbFiOrbI\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Login User",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"shem4soul@gmail.com\",\r\n    \"password\": \"church\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/users/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "users",
+            "login"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Login User",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"shem4soul@gmail.com\",\r\n    \"password\": \"church\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/users/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "users",
+                "login"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "267"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"10b-HuEu2G4/adohzdDXe2gcB0lYuZA\""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 29 Jan 2026 13:37:07 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"_id\": \"697b5f60da0d40120fe88ab4\",\n    \"name\": \"Shittu Emma\",\n    \"email\": \"shem4soul@gmail.com\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5N2I1ZjYwZGEwZDQwMTIwZmU4OGFiNCIsImlhdCI6MTc2OTY5MzgyNywiZXhwIjoxNzcyMjg1ODI3fQ.k3a-DhImrkiqXzWh-sPP6_PmpGZMHSnzIgT8G2M2EMA\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Create Item",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5N2I1ZjYwZGEwZDQwMTIwZmU4OGFiNCIsImlhdCI6MTc2OTY5MzgyNywiZXhwIjoxNzcyMjg1ODI3fQ.k3a-DhImrkiqXzWh-sPP6_PmpGZMHSnzIgT8G2M2EMA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Phone\",\r\n  \"description\": \"Iphone 16pro Max\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/items",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "items"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Create Item",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Laptop\",\r\n  \"description\": \"Dell XPS 15\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/items",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "items"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "164"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"a4-bOqOqMTlRzQHGKWa1wo8t6FyEgI\""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 29 Jan 2026 13:39:08 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"name\": \"Laptop\",\n    \"description\": \"Dell XPS 15\",\n    \"_id\": \"697b62fbda0d40120fe88aba\",\n    \"createdAt\": \"2026-01-29T13:39:07.890Z\",\n    \"updatedAt\": \"2026-01-29T13:39:07.890Z\",\n    \"__v\": 0\n}"
+        }
+      ]
+    },
+    {
+      "name": "Get All Item",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5N2I1ZjYwZGEwZDQwMTIwZmU4OGFiNCIsImlhdCI6MTc2OTY5MzgyNywiZXhwIjoxNzcyMjg1ODI3fQ.k3a-DhImrkiqXzWh-sPP6_PmpGZMHSnzIgT8G2M2EMA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Laptop\",\r\n  \"description\": \"Dell XPS 15\"\r\n}\r\n"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/items",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "items"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Get All Item",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Laptop\",\r\n  \"description\": \"Dell XPS 15\"\r\n}\r\n"
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/items",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "items"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "819"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"333-a9nun6S7G9MQ8adv49SwpSFtNus\""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 29 Jan 2026 14:13:21 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"_id\": \"697b62fbda0d40120fe88aba\",\n        \"name\": \"Laptop\",\n        \"description\": \"Dell XPS 15\",\n        \"createdAt\": \"2026-01-29T13:39:07.890Z\",\n        \"updatedAt\": \"2026-01-29T13:39:07.890Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"697b68fdda0d40120fe88ac3\",\n        \"name\": \"Phone\",\n        \"description\": \"Iphone 16pro Max\",\n        \"createdAt\": \"2026-01-29T14:04:45.673Z\",\n        \"updatedAt\": \"2026-01-29T14:04:45.673Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"697b69aeda0d40120fe88ac8\",\n        \"name\": \"Cars\",\n        \"description\": \"Lexus 626\",\n        \"createdAt\": \"2026-01-29T14:07:42.083Z\",\n        \"updatedAt\": \"2026-01-29T14:07:42.083Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"697b69d0da0d40120fe88acb\",\n        \"name\": \" Tv\",\n        \"description\": \"LG Tv\",\n        \"createdAt\": \"2026-01-29T14:08:16.672Z\",\n        \"updatedAt\": \"2026-01-29T14:11:20.059Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"697b6abcda0d40120fe88ad6\",\n        \"name\": \"Shoes\",\n        \"description\": \"Givenchy Shoes\",\n        \"createdAt\": \"2026-01-29T14:12:12.862Z\",\n        \"updatedAt\": \"2026-01-29T14:12:12.862Z\",\n        \"__v\": 0\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Get Single Item",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "Get Single Item",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/items/697b62fbda0d40120fe88aba",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "items",
+                "697b62fbda0d40120fe88aba"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "164"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"a4-Vh2Ct5eRzea5ewwMMqzovLlptpo\""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 29 Jan 2026 14:03:35 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"_id\": \"697b62fbda0d40120fe88aba\",\n    \"name\": \"Laptop\",\n    \"description\": \"Dell XPS 15\",\n    \"createdAt\": \"2026-01-29T13:39:07.890Z\",\n    \"updatedAt\": \"2026-01-29T13:39:07.890Z\",\n    \"__v\": 0\n}"
+        }
+      ]
+    },
+    {
+      "name": "Update Item",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5N2I1ZjYwZGEwZDQwMTIwZmU4OGFiNCIsImlhdCI6MTc2OTY5MzgyNywiZXhwIjoxNzcyMjg1ODI3fQ.k3a-DhImrkiqXzWh-sPP6_PmpGZMHSnzIgT8G2M2EMA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \" Tv\",\r\n  \"description\": \"LG Tv\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/items/697b69d0da0d40120fe88acb",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "items",
+            "697b69d0da0d40120fe88acb"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Update Item",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \" Tv\",\r\n  \"description\": \"LG Tv\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/items/697b69d0da0d40120fe88acb",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "items",
+                "697b69d0da0d40120fe88acb"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "155"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"9b-ydhkfTQv+3cdkP1wOFd7+sS2o10\""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 29 Jan 2026 14:11:20 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"_id\": \"697b69d0da0d40120fe88acb\",\n    \"name\": \" Tv\",\n    \"description\": \"LG Tv\",\n    \"createdAt\": \"2026-01-29T14:08:16.672Z\",\n    \"updatedAt\": \"2026-01-29T14:11:20.059Z\",\n    \"__v\": 0\n}"
+        }
+      ]
+    },
+    {
+      "name": "Delete Item",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5N2I1ZjYwZGEwZDQwMTIwZmU4OGFiNCIsImlhdCI6MTc2OTY5MzgyNywiZXhwIjoxNzcyMjg1ODI3fQ.k3a-DhImrkiqXzWh-sPP6_PmpGZMHSnzIgT8G2M2EMA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/items/697b6abcda0d40120fe88ad6",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "items",
+            "697b6abcda0d40120fe88ad6"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Delete Item",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/items/697b6abcda0d40120fe88ad6",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "items",
+                "697b6abcda0d40120fe88ad6"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "26"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"1a-Wcu7IWCmIab/Hbh8bLsrQ0Q9bzw\""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 29 Jan 2026 14:14:21 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"Item removed\"\n}"
+        }
+      ]
+    }
+  ]
+}
