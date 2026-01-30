@@ -3,7 +3,7 @@
 This is a RESTful CRUD API built with Node.js, Express, TypeScript, and MongoDB.
 The application includes JWT-based authentication and protected routes for managing items.
 
-This project was developed as part of a backend technical assessment.
+This project was developed as part of a Backend Developer Technical Assessment.
 
 🚀 Tech Stack
 
@@ -31,19 +31,20 @@ src/
 
 ⚙️ Environment Variables
 
-Create a .env file in the root directory and add the following:
+Create a .env file in the root directory and add:
 
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key
 
 
-⚠️ Do NOT commit your real .env file. Include a .env.example instead.
+⚠️ Do NOT commit your real .env file.
+Include a .env.example file instead.
 
 ▶️ How to Run the Project Locally
 1️⃣ Clone the repository
-git clone <your-repository-link>
-cd <your-project-folder>
+git clone https://github.com/shem4soul/BACK-END-CRUD-ASSESSMENT.git
+cd BACK-END-CRUD-ASSESSMENT
 
 2️⃣ Install dependencies
 npm install
@@ -52,13 +53,14 @@ npm install
 npm run dev
 
 
-The server should start on:
+Server runs on:
 
 http://localhost:5000
 
 🔐 Authentication
 
-This API uses JWT authentication. Users must register and log in to access protected routes.
+This API uses JWT authentication.
+Users must register and log in to access protected routes.
 
 📝 Register User
 
@@ -80,7 +82,7 @@ POST /api/users/login
 }
 
 
-Response:
+Response
 
 {
   "token": "your_jwt_token"
@@ -98,7 +100,7 @@ POST	/api/users/register	Register a new user
 POST	/api/users/login	Login and receive JWT
 📦 Item Routes (Protected)
 
-All item routes require a valid JWT token.
+⚠️ All item routes require a valid JWT token.
 
 Method	Endpoint	Description
 POST	/api/items	Create a new item
@@ -126,21 +128,21 @@ Run the requests
 
 The API uses centralized error handling and returns proper HTTP status codes:
 
-200 OK
+200 – OK
 
-201 Created
+201 – Created
 
-400 Bad Request
+400 – Bad Request
 
-401 Unauthorized
+401 – Unauthorized
 
-404 Not Found
+404 – Not Found
 
-500 Internal Server Error
+500 – Internal Server Error
 
 🛡 Security Features
 
-Passwords are hashed using bcrypt
+Passwords hashed using bcrypt
 
 JWT used for secure authentication
 
